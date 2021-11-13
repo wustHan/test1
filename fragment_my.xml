@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/textchecked"
+            android:gravity="center"
+            android:text="我的"
+            android:textColor="@color/bgColor"
+            android:textSize="20sp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_weight="0"
+                android:layout_gravity="center"
+                android:src="@drawable/recent" />
+
+            <TextView
+                android:id="@+id/textView31"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:text="最近删除" />
+
+            <TextView
+                android:id="@+id/clear_my"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:textSize="18sp"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:text="清空" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/recent_my"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/about_my"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="关于" />
+
+        <Button
+            android:id="@+id/bt_my_out"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="退出"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

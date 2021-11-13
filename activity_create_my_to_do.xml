@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateMyToDoActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:background="@color/textchecked"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="基板模板"
+                        android:textColor="@color/bottomcolor"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0"
+                        android:text="标题："
+                        android:textSize="18dp" />
+
+                    <EditText
+                        android:id="@+id/toDo_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0"
+                        android:text="地点："
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/toDo_place"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0"
+                        android:text="正文："
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/toDo_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:inputType="textMultiLine"
+                        android:maxLength="700"
+                        android:minLines="7"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/textView23"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="开始时间："
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/toDo_startDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="0"
+                        android:text="选择日期"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/toDO_startClock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="0"
+                        android:text="选择时刻"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+
+                        android:text="截止时间："
+                        android:textSize="18sp" />
+
+                    <TextView
+
+                        android:id="@+id/toDo_endDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="0"
+
+                        android:text="选择日期"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/toDo_endClock"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="0"
+                        android:text="选择时刻"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="0"
+                        android:text="默认显示"
+                        android:textColor="@color/black"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="发起人："
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/toDo_sender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:text="自动填充"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="群体："
+
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/toDo_receiverGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="18sp" />
+
+                    <TextView
+
+                        android:id="@+id/to_do_impotence"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:text="重要性："
+                        android:textSize="18sp" />
+
+                    <Spinner
+                        android:id="@+id/color_spinner"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="0"
+                        android:entries="@array/colorPicture"
+                        android:prompt="@string/impotence" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="附件："
+                        android:textSize="18sp" />
+
+                    <EditText
+                        android:id="@+id/toDO_somethingElse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_if_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:text="是否给自己保留："
+                        android:textSize="18sp" />
+
+                    <CheckBox
+                        android:id="@+id/toDo_ifTop"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="0" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/bt_toDo_ok"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="完成"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

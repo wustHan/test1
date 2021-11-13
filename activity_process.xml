@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProcessActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/textchecked"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="      处理待办"
+                android:textColor="@color/bottomcolor"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/process_delete"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:text="删除"
+                android:textColor="@color/bottomcolor"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:text="发送者："
+                android:textSize="18sp" />
+
+            <TextView
+
+                android:id="@+id/process_sender"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0"
+                android:text="标题内容"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:text="标题："
+                android:textSize="18sp" />
+
+            <TextView
+
+                android:id="@+id/process_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0"
+                android:text="标题内容"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:text="地点："
+                android:textSize="18sp" />
+
+            <TextView
+
+                android:id="@+id/process_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0"
+                android:text="标题内容"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_process_content"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:text="正文："
+                android:textSize="18sp" />
+
+            <TextView
+
+                android:id="@+id/process_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0"
+                android:text="标题内容"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_process_starttime"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:text="开始时间："
+                android:textSize="18sp" />
+
+            <TextView
+
+                android:id="@+id/process_starttime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0"
+                android:text="标题内容"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+
+                android:id="@+id/process_wishtime"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:text="截止时间："
+                android:textSize="18sp" />
+
+            <TextView
+
+                android:id="@+id/process_endtime"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0"
+                android:text="标题内容"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:text="群体："
+                android:textSize="18sp" />
+
+            <TextView
+
+                android:id="@+id/process_receiver_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0"
+                android:text="标题内容"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_process_fujian"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0"
+                android:gravity="center"
+                android:text="附件："
+                android:textSize="18sp" />
+
+            <TextView
+
+                android:id="@+id/process_somethingelse"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0"
+                android:text="标题内容"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:enabled="false" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="重要性："
+                android:textSize="18sp" />
+
+            <Spinner
+                android:id="@+id/color_spinner1"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:prompt="@string/impotence"
+                android:entries="@array/colorPicture"
+                android:layout_weight="0" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:padding="10dp">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="是否置顶："
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/toDo_ifTop1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/bt_process_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="保存"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

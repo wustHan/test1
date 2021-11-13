@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateSimpleToDoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/textchecked"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="简易模板"
+                android:textColor="@color/bottomcolor"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0"
+                android:text="标题："
+                android:textSize="18dp" />
+
+            <EditText
+
+                android:id="@+id/simple_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0"
+                android:text="时间："
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/simple_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0"
+                android:text="选择日期"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/simple_clock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="0"
+                android:text="选择时刻"
+                android:textSize="18dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0"
+                android:text="地点："
+                android:textSize="18dp" />
+
+            <EditText
+
+                android:id="@+id/simple_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:padding="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0"
+
+                android:text="群体："
+                android:textSize="18dp" />
+
+            <EditText
+
+                android:id="@+id/simple_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="请填写事件相关人员"
+                android:layout_weight="0"
+                android:ems="10"
+                android:inputType="textPersonName" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_simple_top"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0"
+                android:text="重要性："
+                android:textSize="18dp" />
+
+            <Spinner
+                android:id="@+id/simple_spinner"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="0"
+                android:entries="@array/colorPicture"
+                android:prompt="@string/impotence" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_simple_keep"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:text="是否给自己保留："
+                android:textSize="18dp" />
+
+            <CheckBox
+                android:id="@+id/simple_check"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="0" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/simple_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="保存"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
